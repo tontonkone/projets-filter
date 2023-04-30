@@ -44,10 +44,11 @@ for(let m = 0; m < limitCard; m++){
             ]
         );
     const cardBody = createMarkup('div','',card,[{name:'class', value:'card-body'}]);
-    createMarkup('h2',tab[m],cardBody)
+    const article = createMarkup('article','',cardBody)
+    createMarkup('h2',tab[m],article)
     createMarkup('p',`Some quick example text to build on the card title and make up the bulk of the card's
-                    content.`, cardBody, [{ name: 'class', value:'card-text'}]);
-    createMarkup('a', 'Learn', cardBody, [{ name: 'class', value:'btn btn-primary'}])
+                    content.`, article, [{ name: 'class', value:'card-text'}]);
+    createMarkup('a', 'Learn', article, [{ name: 'class', value:'btn btn-primary'}])
 
 }
 
